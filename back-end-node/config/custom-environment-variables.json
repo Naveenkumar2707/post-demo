@@ -1,0 +1,9 @@
+
+{
+    "dbConfig": {     
+        "password" : "post_password",
+        "secretkey":"post_secretkey",
+        "jwtSecretKey" :"post_jwtSecretKey"
+  }
+
+}
