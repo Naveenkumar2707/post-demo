@@ -1,0 +1,31 @@
+<div>
+  <form class="example-form registration-form" (ngSubmit)="register()" #registerForm="ngForm">
+    <h2>Register</h2>
+    <div class="name">
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="First name" name="first_name" value="" ngModel required />
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="last name" name="last_name" value="" ngModel required />
+      </mat-form-field>
+    </div>
+    <div class="email">
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Email" name="email" value="" required email ngModel required/>
+      </mat-form-field>
+    </div>
+    <div class="password">
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Password" name="password" ngModel value=""  required/>
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Confirm-Password" name="confirm_password" ngModel value="" required />
+      </mat-form-field>
+    </div>
+    <div class="submit-btn">
+      <button mat-raised-button type="submit" [disabled] = "!registerForm.valid">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>

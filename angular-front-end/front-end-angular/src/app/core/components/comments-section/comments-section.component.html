@@ -1,0 +1,75 @@
+<div class="form-status comments">
+  <div class="fixed-header"></div>
+  <div class="status-listing">
+    <div class="status-panel-parent">
+      <div class="post-header post">Post</div>
+      <mat-card class="example-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>{{ postDeatil?.first_name + " "  +  postDeatil?.last_name}}</mat-card-title>
+          <!-- <mat-card-subtitle>{{ post.subtitle }}</mat-card-subtitle> -->
+        </mat-card-header>
+        <mat-card-content (click)="onComments()">
+          <p>
+            {{ postDeatil?.post }}
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button>
+            <i class="material-icons"> thumb_up </i>LIKE
+          </button>
+          <!-- <button mat-button>
+            <i class="material-icons"> mode_comment </i>Comments
+          </button> -->
+        </mat-card-actions>
+      </mat-card>
+      <div class="status-panel create-post">
+        
+          <mat-form-field class="example-full-width ">
+              <form (ngSubmit)="createcomment()" #commentForm="ngForm">
+            <input
+              matInput
+              placeholder="Write comment for this post here......"
+              ngModel
+              type="name"
+              required
+              name="comment"
+            />
+            <div class="image-circle"></div>
+           
+              <button mat-raised-button type="submit" [disabled] = "!commentForm.valid" color="primary">Post</button>
+            </form>
+          </mat-form-field>
+         
+        </div>
+
+ 
+        <div class="status-panel">
+
+              <mat-card class="example-card" *ngFor="let comment of commentsList">
+                  <mat-card-header>
+                    <div mat-card-avatar class="example-header-image"></div>
+                    <mat-card-title>{{ comment?.first_name + " "  +  comment?.last_name}}</mat-card-title>
+                    <!-- <mat-card-subtitle>{{ post.subtitle }}</mat-card-subtitle> -->
+                  </mat-card-header>
+                  <mat-card-content (click)="onComments()">
+                    <p>
+                      {{ comment?.comment }}
+                    </p>
+                  </mat-card-content>
+                  <mat-card-actions>
+                    <button mat-button>
+                      <i class="material-icons"> thumb_up </i>LIKE
+                    </button>
+                    <!-- <button mat-button>
+                      <i class="material-icons"> mode_comment </i>Comments
+                    </button> -->
+                  </mat-card-actions>
+                </mat-card>
+          </div>
+        
+     
+      </div>
+
+  </div>
+</div>

@@ -1,0 +1,211 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+li {
+  list-style: none;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+a:hover,
+a:focus,
+button:focus,
+button:hover {
+  outline: none;
+}
+.mat-list-item-content {
+  padding-right: 0;
+}
+.register-btn {
+  min-width: 85px !important;
+  margin-left: 20px !important;
+}
+.login {
+  .mat-form-field-infix {
+    font-size: 14px;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 30px;
+    -webkit-box-shadow: 0 0 5px 0 rgba(170, 170, 170, 0.15);
+    box-shadow: 0 0 5px 0 rgba(170, 170, 170, 0.15);
+    display: block;
+    width: 100%;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  label {
+    padding: 0 18px;
+    top: 22px;
+  }
+  .mat-form-field-underline {
+    display: none;
+  }
+  .contact-form .row:nth-child(3) mat-form-field {
+    .mat-form-field-infix {
+      min-height: 200px;
+    }
+  }
+  .mat-form-field-appearance-legacy.mat-form-field-can-float.mat-form-field-should-float
+    .mat-form-field-label {
+    display: none;
+  }
+  .form-btn {
+    justify-content: flex-end;
+  }
+  .mat-form-field-wrapper {
+    padding-bottom: 0 !important;
+  }
+}
+
+.fixed-header {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 99;
+  display: flex;
+  justify-content: flex-end;
+  background: #17eed5;
+  height: 65px;
+}
+
+/*form-bg*/
+.form-status {
+  background: url("./assets/img/form-bg.jpg");
+  background-size: cover;
+  .mat-form-field-underline {
+    display: none;
+  }
+  .mat-form-field-appearance-legacy.mat-form-field-can-float.mat-form-field-should-float
+    .mat-form-field-label {
+    display: none;
+  }
+  .status-listing {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    .status-panel-parent {
+      background-color: #0d7598;
+      max-width: 500px;
+      padding: 20px;
+      padding-top: 110px;
+      .post-header {
+        padding: 10px;
+        background: #17eed5;
+        color: #495057;
+      }
+      .post-header.post {
+        margin-bottom: 20px;
+        width: 518px;
+        right: 19px;
+        position: relative;
+      }
+      mat-form-field {
+        width: 100%;
+      }
+      .status-panel.create-post {
+        margin-bottom: 50px;
+      }
+      .status-panel {
+        background: #fff;
+        padding: 15px;
+        width: 470px;
+        .mat-input-element {
+          padding-left: 70px;
+          position: relative;
+          top: -7px;
+        }
+        label {
+          top: 8px;
+          left: 62px;
+        }
+      }
+    }
+  }
+}
+.image-circle {
+  width: 40px;
+  height: 40px;
+  border: 0 solid transparent;
+  background: transparent;
+  border-radius: 50%;
+  position: relative;
+  top: -32px;
+  background: url("./assets/img/login-bg.jpg") no-repeat;
+  background-size: cover;
+}
+mat-card {
+  border-radius: 0 !important;
+  margin-bottom: 20px;
+  mat-card-content {
+    cursor: pointer;
+  }
+  button i {
+    position: relative;
+    font-size: 18px !important;
+    right: 5px;
+    top: -2px;
+  }
+  button.cdk-focused {
+    color: #17eed5;
+    i {
+      color: #17eed5;
+    }
+  }
+}
+
+.example-header-image {
+  background-image: url("https://material.angular.io/assets/img/examples/shiba1.jpg");
+  background-size: cover;
+}
+/*/form-bg*/
+/*COMMENTS*/
+.form-status.comments {
+  height: 100vh;
+  .status-panel-parent {
+    padding-top: 66px;
+  }
+  .comments-section {
+    .comment-listing {
+      position: relative;
+      margin-bottom: 20px;
+    }
+    .mat-card-actions {
+      position: absolute;
+      top: 21px;
+      left: 54px;
+      button {
+        margin: 0;
+        padding: 0;
+        font-size: 12px;
+      }
+    }
+  }
+}
+/*/COMMENTS*/
+.registration-form {
+  .name mat-form-field,
+  .password mat-form-field {
+    width: 200px;
+    margin-right: 20px;
+  }
+  .email mat-form-field {
+    width: 420px;
+  }
+  .submit-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    button {
+      background: #17eed5;
+    }
+  }
+}

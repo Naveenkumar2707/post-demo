@@ -1,0 +1,75 @@
+.login {
+  background: url("../../../../assets/img/login-bg.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+.example-card {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.mat-card-header {
+  flex-direction: column !important;
+}
+.example-full-width {
+  width: 100%;
+  font-size: 18px;
+}
+
+.app-login {
+  background-color: grey;
+}
+// .card-main-container {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   margin-top: 0px;
+// }
+.fixed-header {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 99;
+  display: flex;
+  justify-content: flex-end;
+  background: #17eed5;
+  height: 65px;
+  div {
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 30px;
+  }
+}
+
+.example-card[_ngcontent-c1] {
+  max-width: 360px !important;
+  width: 100%;
+  padding: 0;
+  max-height: 360px !important;
+  height: 100%;
+}
+.mat-card-header {
+  background: #17eed5;
+}
+.example-form {
+  padding: 30px 20px;
+}
+.mat-form-field {
+  margin-right: 20px;
+}
+.mat-form-field.mat-focused .mat-form-field-label {
+  color: #17eed5 !important;
+}
+.mat-raised-button {
+  background: #17eed5;
+  color: #495057;
+}
+// .card-main-container {
+//   background: url("/assets/img/banner.jpg");
+// }
+.mat-card-content {
+  margin-bottom: 0;
+}
